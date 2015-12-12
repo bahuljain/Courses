@@ -55,4 +55,22 @@
 - Sampling from Gaussian
 
 ##Classification using Gaussians
+- Gaussian for classes
+- Max Likelihood to obtain parameters
+- Prediction: Bayes Optimal Decision (argmax_y)
+
+##Regression using Gaussians
+- Max Likelihood given data to obtain parameters.
+- Bayes Optimal Decision
+
+##Principal Component Analysis (Compression)
+- Dimensionality Reduction
+- Reconstruct data as mean and steps along multiple directions
+- Directions -> Eigen Vectors of Covariance
+- Steps Size -> Eigen Values of Covariance
+- Choose top C eigenvalues 
+ 
+##Bayesian Inference
+- MLE?
+- MAP?
 
