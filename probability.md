@@ -44,4 +44,15 @@
 
 ##Multinomial Counts: Text Classification - Email/Spam
 
-##Gaussian
+##Gaussian Distribution
+- Parameters: Mean, Variance
+
+##Multivariate Gaussian Representation
+- Parameters: Mean Vector, Covariance Matrix
+- Spherical
+- Diagonal Covariance
+- Max Likelihood Gaussian
+- Sampling from Gaussian
+
+##Classification using Gaussians
+
