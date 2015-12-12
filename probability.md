@@ -1,6 +1,4 @@
-# Probability 
-
-##Probability Models
+#Probability Models
 - linear regression using Gaussian
 - logistic regression using Bernoulli's Model
 - Likelihood in Probability Models
@@ -35,8 +33,15 @@
 ##Bernoulli Probability Models
 - Maximum Likelihood
 
-##Naive Bayes: Text Classification
+##Naive Bayes: Text Classification - Email/Spam
 - Likelihood
 - Maximum Likelihood
 - Making Predictions
 
+##Categorical/Multinomial Probability Models
+- Representation
+- Maximum Likelihood (use lagrange multipliers)
+
+##Multinomial Counts: Text Classification - Email/Spam
+
+##Gaussian
