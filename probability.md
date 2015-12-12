@@ -74,3 +74,12 @@
 - MLE?
 - MAP?
 
+##Mixture Models
+- multiple gaussians
+- clustering
+
+##K-Means Algorithm
+
+##EM Algorithm
+- Expectation Step
+- Maximization Step
