@@ -81,5 +81,6 @@
 ##K-Means Algorithm
 
 ##EM Algorithm
-- Expectation Step
+- Expectation Step 
 - Maximization Step
+- Bound Maximization using Jensen's Inequality
