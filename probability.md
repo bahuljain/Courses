@@ -84,3 +84,51 @@
 - Expectation Step 
 - Maximization Step
 - Bound Maximization using Jensen's Inequality
+
+##Probability Graphical Models
+- Storage, Inference Efficiency
+- Factorization of Joint Probability Distribution
+- DAG's or Bayesian Networks
+  - 3 Fundamentals cases:
+    - Markov Chain
+    - 1 cause, 2 effects
+    - 2 causes, 1 effect
+  - Maximum Likelihood for Graphical Models
+  - Testing Conditional Independence using Bayes Ball algorithm
+    - 3 base cases
+    - leaf nodes
+
+- Undirected Graphs or Markov Models
+  - Markov Property
+  - Hammersley Clifford Theorem
+  - Potential Functions
+  - Separation
+
+##Inference from Probability Graph Models
+- Marginal Inference: JTA
+- MAP: ArgMax JTA
+
+###Junction Tree Algorithm
+
+######Moralization
+- connect all parents pairwise 
+
+######Introducing Evidence
+- slice tables
+
+######Triangulation
+- eliminate cycles over size 3
+- eliminate chordless cycles
+
+######Constructing Junction Tree
+- Spanning Tree using Kruskal's algorithm (Maximum Cardinality of Separators)
+- Running Intersection Property
+
+######Propagating Probabilities
+- Purpose
+- Cliques to Separator
+  - JTA: sum
+  - ArgMax JTA: max
+- Separator to Cliques
+- Collect & Distribute
+- Normalization
