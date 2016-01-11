@@ -2,8 +2,8 @@
 
 ###Data Types
 
-- Basic types are disjoint. i.e no value belongs to 2 different types
-- no implicit conversion
+Basic types are disjoint. i.e no value belongs to 2 different types<b>
+no implicit conversion
 
 
 1. Integer (int)
@@ -30,7 +30,7 @@
 
 ###Expressions
 
-- compute values
+compute values
 
 1. if ... then ... else ...
 	- if -> boolean expression
