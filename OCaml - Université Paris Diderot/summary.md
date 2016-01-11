@@ -2,7 +2,7 @@
 
 ###Data Types
 
-Basic types are disjoint. i.e no value belongs to 2 different types<b>
+Basic types are disjoint. i.e no value belongs to 2 different types<br>
 no implicit conversion
 
 
