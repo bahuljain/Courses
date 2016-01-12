@@ -35,3 +35,13 @@ compute values
 1. if ... then ... else ...
 	- if -> boolean expression
 	- then and else -> same type expression
+
+###Definitions
+
+give names to values
+
+1. Global 
+	- effective for the rest of the top level session
+	- let name = expression
+	- once set, the value of an identifier never changes
+	
