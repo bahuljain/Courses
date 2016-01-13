@@ -38,10 +38,30 @@ compute values
 
 ###Definitions
 
-give names to values
+	- give names to values
+	- use 'and' for simultaneous definition
+	- let <var1> = <expr1> and let <var2> = <expr2>;;
 
-1. Global 
+
+#####Global 
 	- effective for the rest of the top level session
 	- let name = expression
 	- once set, the value of an identifier never changes
+
+#####Local
+	- effective only is given scope
+	- let <name> = <expression> in <local scope: expression>
 	
+###Functions
+	- let <function name> <arguments>...<args> = {body}
+	- lexical scoping
+	
+#####Recursive Functions
+	- using keyword 'rec'
+	- let rec <name> <arguments> = <expression including call to itself>
+	- important to learn recursion since there are no loops in ocaml
+	
+###User Defined Types
+	- type <identifier> = some_type
+	- must start with lowercase letters
+	- to annotate -> x : some_type
