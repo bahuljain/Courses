@@ -65,3 +65,19 @@ compute values
 	- type <identifier> = some_type
 	- must start with lowercase letters
 	- to annotate -> x : some_type
+
+###Tuples
+	- let <identifier> = (a,b,c,d..)
+	- to read: let (name, age) = person (where person in a tuple)
+	- and now we can use the variables name and age as we want
+	- _ : wildcard pattern matching placeholder, used to ignore a field in tuple
+	
+###Records
+	- need to have a type declared to use records unlike tuples
+	- type <type_identifier> = { field_name : type ; field_name : some_type }
+	- <b>all field names should be distinct</b>
+	- To construct record: {field_name = some_expression ; ....}
+	- To observe field: some_expression.field_name
+	- To observe multiple fields: use record patterns
+	- represented by a heap-allocated block
+	
