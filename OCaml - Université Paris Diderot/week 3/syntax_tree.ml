@@ -29,3 +29,18 @@ let rec factorize (e : exp) : exp =
         else Add (factorize x,factorize y)
       | _ -> Add (factorize x, factorize y)
 ;;
+
+let expand (e : exp) : exp =
+  match e with 
+    | Mul (x , Add (y, z)) -> Add (Mul (x, y), Mul (x, z))
+    | _ -> e
+;;
+
+let rec simplify (e : exp) : exp = 
+  match e with
+    | Int x -> Int x
+    | Mul (x, Int 0) | Mul (Int 0, x) -> Int 0
+    | Mul (x, Int 1) | Mul (Int 1, x) | Add (x, Int 0) | Add (Int 0, x) -> simplify x
+    | Add (x,y) -> Add (simplify x, simplify y)
+    | Mul (x,y) -> Mul (simplify x, simplify y)
+;;
