@@ -24,7 +24,7 @@ let rec factorize (e : exp) : exp =
   | Add (x,y) -> 
     match (x,y) with
       | (Mul (a,b), Mul (c,d)) -> 
-        if a = c then Mul (factorize a, Add (factorize b, factorize c)) 
+        if a = c then Mul (factorize a, Add (factorize b, factorize d)) 
         else Add (factorize x,factorize y)
       | _ -> Add (factorize x, factorize y)
 ;;
