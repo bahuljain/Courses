@@ -15,6 +15,7 @@ let rec eval (e : exp) : int =
 
 (* 
    a * b + c * d -> a * (b + c)
+   Also recursion is not required this could have been very simplified
 *)
 
 let rec factorize (e : exp) : exp = 
