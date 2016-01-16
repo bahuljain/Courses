@@ -13,7 +13,9 @@ let split (l : int list) : queue =
   let len = (List.length l) / 2 in
   let rec assign l i (front, back) : queue =
     if i >= (List.length l) then (front, back)
-    else if i < len then assign l (i + 1) (front , (back @ [(List.nth l i)]))
+    else if i < len then 
+      let (f,b) = assign l (i + 1) (front,back) in
+      (f, (List.nth l i) :: b )
     else  assign l (i + 1) ( (List.nth l i) :: front , back )
   in
   assign l 0 ([],[])
