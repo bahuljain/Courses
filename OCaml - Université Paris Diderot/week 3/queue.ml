@@ -9,8 +9,8 @@ let is_empty (front, back) : bool =
 
 let enqueue x (front, back) : queue = ( front, x :: back );;
 
-(* Simply assigning the first half to front in forward direction and 
- assigning the later half to back in reverse order *)
+(* Simply assigning the first half to back in reverse order and 
+ assigning the later half to front in same order *)
 let split (l : int list) : queue =
   let mid = (List.length l) / 2 in
   let rec assign l i (front, back) : queue =
