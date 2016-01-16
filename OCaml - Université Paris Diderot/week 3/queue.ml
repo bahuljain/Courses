@@ -4,6 +4,7 @@ let is_empty (front, back) : bool =
   match (front, back) with
     | ([], []) -> true
     | (_,_) -> false
+    (* Funny Looking Pattern ;) *)
 ;; 
 
 let enqueue x (front, back) : queue = ( front, x :: back );;
