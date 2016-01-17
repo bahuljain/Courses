@@ -33,12 +33,9 @@ let rec delete x = function
 let balanced root : bool = 
   let rec height = function
   | Empty -> 0
-  | Node (l,_,r) ->
-    let left = height l and right = height r in
-    if left = -1 || right = -1 then -1
-    else if abs (left - right) > 1 then -1
-    else 1 + (max left right)
-  in
-  if height root = -1 then false
-  else true
+  | Node (l,_,r) -> let lh = height l and rh = height r in
+    if lh = -1 || rh = -1 || abs (lh - rh) > 1 then -1
+    else 1 + max lh rh 
+  in 
+  if height root = -1 then false else true
 ;;
